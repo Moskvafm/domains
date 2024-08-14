@@ -21,6 +21,8 @@ DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-KEYWORD,facebook
 
+#patreon 
+DOMAIN-SUFFIX,patreon.com
 
 #Instagram
 DOMAIN-SUFFIX,cdninstagram.com
