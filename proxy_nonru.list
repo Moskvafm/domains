@@ -18,7 +18,9 @@ DOMAIN-SUFFIX,fbsbx.com
 DOMAIN-SUFFIX,f.vision
 DOMAIN-SUFFIX,cdnfbsbx.com
 DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,messenger.com
 DOMAIN-KEYWORD,facebook
+
 
 #Instagram
 DOMAIN-SUFFIX,cdninstagram.com
@@ -34,6 +36,7 @@ DOMAIN-SUFFIX,twitter.co
 DOMAIN-SUFFIX,twitthat.com
 DOMAIN-SUFFIX,twtkr.com
 DOMAIN-SUFFIX,twttr.com
+DOMAIN-SUFFIX,t.co
 DOMAIN-KEYWORD,twitter
 
 #Linkedin
