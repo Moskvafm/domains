@@ -7,6 +7,10 @@ DOMAIN-KEYWORD,youtube
 DOMAIN-KEYWORD,ggpht
 DOMAIN-KEYWORD,ytimg
 
+#Trimo
+DOMAIN-SUFFIX,threema.ch
+DOMAIN-KEYWORD,threema
+
 #Microsoft & Bing
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,microsoft.com
