@@ -5,7 +5,15 @@ DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-KEYWORD,youtube
 DOMAIN-KEYWORD,ggpht
-DOMAIN-KEYWORD,ytimg
+DOMAIN-KEYWORD,ytim
+
+#Strava
+DOMAIN-SUFFIX,strava.com
+DOMAIN-KEYWORD,strava
+
+#technogym
+DOMAIN-SUFFIX,mywellness.com
+DOMAIN-KEYWORD,mywellness
 
 #Trimo
 DOMAIN-SUFFIX,threema.ch
