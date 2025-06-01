@@ -67,6 +67,8 @@ DOMAIN-SUFFIX,monterosa.com
 DOMAIN-SUFFIX,brightcove.com
 DOMAIN-SUFFIX,boltdns.net
 DOMAIN-SUFFIX,newrelic.com
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,marketingcloudapis.com
 
 #Twitter
 DOMAIN-SUFFIX,twitter.com
