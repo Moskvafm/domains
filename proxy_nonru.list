@@ -60,6 +60,10 @@ DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,igcdn.com
 DOMAIN-KEYWORD,instagram
 
+#f1
+DOMAIN-SUFFIX,formula1.com
+DOMAIN-KEYWORD,formula1
+
 #Twitter
 DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,twimg.com
