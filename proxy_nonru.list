@@ -5,9 +5,9 @@ DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,play.google.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-KEYWORD,youtube
-DOMAIN-KEYWORD,ggpht
-DOMAIN-KEYWORD,ytim
+#DOMAIN-KEYWORD,youtube
+#DOMAIN-KEYWORD,ggpht
+#DOMAIN-KEYWORD,ytim
 
 #Strava
 DOMAIN-SUFFIX,strava.com
