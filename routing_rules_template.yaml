@@ -88,8 +88,8 @@ routing_rules:
       - "akamaized.net"
       - "adjust.com"
       - "appcenter.ms"
-    target_server: "ru"
-    visibility: "visible"
+    target_server: "nl"
+    visibility: "hidden"
     priority: 50
     description: "Microsoft видит трафик из России"
     
@@ -189,7 +189,7 @@ routing_rules:
     domains:
       - "rutracker.org"
       - "rutracker.ru"
-    target_server: "ru"
+    target_server: "nl"
     visibility: "visible"
     priority: 130
     description: "RuTracker видит трафик из России"
@@ -202,7 +202,7 @@ routing_rules:
       - "kpserver.link"
       - "themoviedb.org"
       - "kinopoiskapiunofficial.tech"
-    target_server: "ru"
+    target_server: "nl"
     visibility: "visible"
     priority: 140
     description: "Kino.pub видит трафик из России"
@@ -211,7 +211,7 @@ routing_rules:
   pda:
     domains:
       - "4pda.ru"
-    target_server: "ru"
+    target_server: "nl"
     visibility: "visible"
     priority: 150
     description: "4PDA видит трафик из России"
@@ -220,7 +220,7 @@ routing_rules:
   manga:
     domains:
       - "manga-chan.me"
-    target_server: "ru"
+    target_server: "nl"
     visibility: "visible"
     priority: 160
     description: "Manga-chan видит трафик из России"
