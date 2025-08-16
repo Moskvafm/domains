@@ -1,0 +1,246 @@
+# Smart VPN Routing Rules
+# GitHub: https://github.com/your-repo/smartvpn-rules
+# Auto-update: Every 5 minutes
+
+version: "1.0"
+last_updated: "2025-08-16"
+description: "Правила умной маршрутизации для Smart VPN"
+
+# Глобальные настройки
+global:
+  default_server: "ru"  # Сервер по умолчанию
+  update_interval: 300  # Обновление каждые 5 минут
+  cache_ttl: 3600       # Кэш на 1 час
+
+# Серверы
+servers:
+  ru:
+    ip: "194.87.146.45"
+    location: "Russia"
+    masquerade: "microsoft.com"
+    visibility: "visible"      # Видно для целевого сервиса
+    description: "Основной сервер для YouTube и российских сервисов"
+    
+  nl:
+    ip: "79.132.139.194"
+    location: "Netherlands"
+    masquerade: "apple.com"
+    visibility: "hidden"       # НЕ видно для целевого сервиса
+    description: "Европейский сервер для заблокированных сервисов"
+
+# Правила маршрутизации
+routing_rules:
+  
+  # YouTube - ВИДНО для сервиса (как из России)
+  youtube:
+    domains:
+      - "youtube.com"
+      - "googlevideo.com"
+      - "ggpht.com"
+      - "ytimg.com"
+      - "play.google.com"
+      - "googleusercontent.com"
+    target_server: "ru"
+    visibility: "visible"
+    priority: 10
+    description: "YouTube видит трафик из России (обход блокировки)"
+    
+  # Strava - НЕ ВИДНО для сервиса (как из Нидерландов)
+  strava:
+    domains:
+      - "strava.com"
+      - "branch.io"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 20
+    description: "Strava видит трафик из Нидерландов (обход блокировки РФ)"
+    
+  # Technogym - НЕ ВИДНО для сервиса (как из Нидерландов)
+  technogym:
+    domains:
+      - "mywellness.com"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 30
+    description: "Technogym видит трафик из Нидерландов"
+    
+  # Threema - НЕ ВИДНО для сервиса (как из Нидерландов)
+  threema:
+    domains:
+      - "threema.ch"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 40
+    description: "Threema видит трафик из Нидерландов"
+    
+  # Microsoft & Bing - ВИДНО для сервиса (как из России)
+  microsoft:
+    domains:
+      - "bing.com"
+      - "microsoft.com"
+      - "bingapis.com"
+      - "bingviz.com"
+      - "msn.com"
+      - "azureedge.net"
+      - "microsoft-falcon.com"
+      - "microsoftapp.net"
+      - "office.com"
+      - "akamaized.net"
+      - "adjust.com"
+      - "appcenter.ms"
+    target_server: "ru"
+    visibility: "visible"
+    priority: 50
+    description: "Microsoft видит трафик из России"
+    
+  # Facebook - НЕ ВИДНО для сервиса (как из Нидерландов)
+  facebook:
+    domains:
+      - "facebook.com"
+      - "fb.com"
+      - "fb.me"
+      - "fbcdn.net"
+      - "fburl.com"
+      - "cdnfacebook.com"
+      - "fbsbx.com"
+      - "f.vision"
+      - "cdnfbsbx.com"
+      - "meta.com"
+      - "messenger.com"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 60
+    description: "Facebook видит трафик из Нидерландов"
+    
+  # Patreon - НЕ ВИДНО для сервиса (как из Нидерландов)
+  patreon:
+    domains:
+      - "patreon.com"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 70
+    description: "Patreon видит трафик из Нидерландов"
+    
+  # Instagram - НЕ ВИДНО для сервиса (как из Нидерландов)
+  instagram:
+    domains:
+      - "cdninstagram.com"
+      - "instagram.com"
+      - "igcdn.com"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 80
+    description: "Instagram видит трафик из Нидерландов"
+    
+  # Formula 1 - НЕ ВИДНО для сервиса (как из Нидерландов)
+  f1:
+    domains:
+      - "formula1.com"
+      - "monterosa.com"
+      - "brightcove.com"
+      - "boltdns.net"
+      - "newrelic.com"
+      - "cloudfront.net"
+      - "marketingcloudapis.com"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 90
+    description: "Formula 1 видит трафик из Нидерландов"
+    
+  # Twitter - НЕ ВИДНО для сервиса (как из Нидерландов)
+  twitter:
+    domains:
+      - "twitter.com"
+      - "twimg.com"
+      - "x.com"
+      - "twitter.co"
+      - "twitthat.com"
+      - "twtkr.com"
+      - "twttr.com"
+      - "t.co"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 100
+    description: "Twitter видит трафик из Нидерландов"
+    
+  # LinkedIn - НЕ ВИДНО для сервиса (как из Нидерландов)
+  linkedin:
+    domains:
+      - "licdn.com"
+      - "linkedin.com"
+      - "lnkd.in"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 110
+    description: "LinkedIn видит трафик из Нидерландов"
+    
+  # OpenAI - НЕ ВИДНО для сервиса (как из Нидерландов)
+  openai:
+    domains:
+      - "openai.com"
+      - "chatgpt.com"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 120
+    description: "OpenAI видит трафик из Нидерландов"
+    
+  # RuTracker - ВИДНО для сервиса (как из России)
+  rutracker:
+    domains:
+      - "rutracker.org"
+      - "rutracker.ru"
+    target_server: "ru"
+    visibility: "visible"
+    priority: 130
+    description: "RuTracker видит трафик из России"
+    
+  # Kino.pub - ВИДНО для сервиса (как из России)
+  kinopub:
+    domains:
+      - "kino.pub"
+      - "kpapp.link"
+      - "kpserver.link"
+      - "themoviedb.org"
+      - "kinopoiskapiunofficial.tech"
+    target_server: "ru"
+    visibility: "visible"
+    priority: 140
+    description: "Kino.pub видит трафик из России"
+    
+  # 4PDA - ВИДНО для сервиса (как из России)
+  pda:
+    domains:
+      - "4pda.ru"
+    target_server: "ru"
+    visibility: "visible"
+    priority: 150
+    description: "4PDA видит трафик из России"
+    
+  # Manga-chan - ВИДНО для сервиса (как из России)
+  manga:
+    domains:
+      - "manga-chan.me"
+    target_server: "ru"
+    visibility: "visible"
+    priority: 160
+    description: "Manga-chan видит трафик из России"
+
+# Дополнительные настройки
+settings:
+  # Логирование
+  logging:
+    enabled: true
+    level: "info"
+    file: "/var/log/smartvpn/routing.log"
+    
+  # Мониторинг
+  monitoring:
+    enabled: true
+    metrics_port: 9091
+    health_check_interval: 30
+    
+  # Кэширование
+  caching:
+    enabled: true
+    dns_cache_ttl: 300
+    routing_cache_ttl: 600
