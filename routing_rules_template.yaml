@@ -55,6 +55,15 @@ routing_rules:
     visibility: "hidden"
     priority: 20
     description: "Strava видит трафик из Нидерландов (обход блокировки РФ)"
+
+  # whatsapp
+  strava:
+    domains:
+      - "whatsapp.net"
+    target_server: "nl"
+    visibility: "visible"
+    priority: 170
+    description: "Whatsapp видит трафик из России (обход блокировки РФ)"
     
   # Technogym - НЕ ВИДНО для сервиса (как из Нидерландов)
   technogym:
