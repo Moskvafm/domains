@@ -2,6 +2,9 @@
 DOMAIN-SUFFIX,rutracker.org
 DOMAIN-SUFFIX,rutracker.ru
 
+#whatsapp
+DOMAIN-SUFFIX,whatsapp.net
+
 #kino.pub
 DOMAIN-SUFFIX,kino.pub
 DOMAIN-SUFFIX,kpapp.link
