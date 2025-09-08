@@ -220,7 +220,8 @@ routing_rules:
       - "kpapp.link"
       - "kpserver.link"
       - "themoviedb.org"
-      - "kinopoiskapiunofficial.tech"
+      #- "kinopoiskapiunofficial.tech"
+      - "tmdb.org"
     target_server: "nl"
     visibility: "visible"
     priority: 140
