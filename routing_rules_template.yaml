@@ -38,7 +38,7 @@ routing_rules:
       - "googlevideo.com"
       - "ggpht.com"
       - "ytimg.com"
-      - "play.google.com"
+      #- "play.google.com"
       - "googleusercontent.com"
       - "youtubei.googleapis.com"
     target_server: "nl"
@@ -60,8 +60,9 @@ routing_rules:
   whatsapp:
     domains:
       - "whatsapp.net"
+      - "whatsapp.com"
     target_server: "nl"
-    visibility: "visible"
+    visibility: "hidden"
     priority: 170
     description: "Whatsapp видит трафик из России (обход блокировки РФ)"
 
