@@ -61,6 +61,20 @@ routing_rules:
     domains:
       - "whatsapp.net"
       - "whatsapp.com"
+      - "wa.me"
+      - "wl.co"
+      - "whatsappbrand.com"
+      - "whatsapp.cc"
+      - "whatsapp-plus.net"
+      - "whatsapp.tv"
+      - "whatsapp-plus.info"
+      - "whatsapp-plus.me"
+      - "whatsapp.org"
+      - "whatsapp.info"
+    ip: 
+      - "157.240.27.52"
+      - "179.60.195.48"
+      - "157.240.201.62"
     target_server: "nl"
     visibility: "hidden"
     priority: 170
