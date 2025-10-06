@@ -71,7 +71,7 @@ routing_rules:
       - "whatsapp-plus.me"
       - "whatsapp.org"
       - "whatsapp.info"
-    ip: 
+    ips: 
       - "157.240.27.52"
       - "179.60.195.48"
       - "157.240.201.62"
