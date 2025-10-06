@@ -56,6 +56,16 @@ routing_rules:
     priority: 20
     description: "Strava видит трафик из Нидерландов (обход блокировки РФ)"
 
+ # Telegram
+  whatsapp:
+    asn:
+      - "AS62041"
+      - "AS21157"
+    target_server: "nl"
+    visibility: "visible"
+    priority: 171
+    description: "Telegram видит трафик из России (обход блокировки РФ)"
+    
   # whatsapp
   whatsapp:
     domains:
@@ -76,6 +86,10 @@ routing_rules:
       - "179.60.195.48"
       - "157.240.201.62"
       - "57.144.223.54"
+    asn:
+      - "AS32934"
+      - "AS149642"
+      - "AS54115"
     target_server: "nl"
     visibility: "hidden"
     priority: 170
