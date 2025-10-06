@@ -75,6 +75,7 @@ routing_rules:
       - "157.240.27.52"
       - "179.60.195.48"
       - "157.240.201.62"
+      - "57.144.223.54"
     target_server: "nl"
     visibility: "hidden"
     priority: 170
