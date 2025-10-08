@@ -57,7 +57,7 @@ routing_rules:
     description: "Strava видит трафик из Нидерландов (обход блокировки РФ)"
 
  # Telegram
-  whatsapp:
+  telegram:
     asn:
       - "AS62041"
       - "AS21157"
@@ -65,7 +65,29 @@ routing_rules:
     visibility: "visible"
     priority: 171
     description: "Telegram видит трафик из России (обход блокировки РФ)"
+
+ # Twitch
+  twitch:
+    asn:
+      - "AS46489"
+    domains:
+      - "twith.tv"
+      - "ttvnw.net"
+      - "jtvnw.net"
+      - "live-video.net"
+      - "twitchcdn.net"
+      - "ext-twitch.tv"
+      - "twitch-shadow.net"
+      - "twitch.a2z.com"
+      - "twitchcdn-shadow.net"
+      - "twitchsvc-staging.tech"
+      - "twitchsvc.net"
+    target_server: "nl"
+    visibility: "visible"
+    priority: 172
+    description: "Twitch видит трафик из России (обход блокировки РФ)"
     
+  
   # whatsapp
   whatsapp:
     domains:
