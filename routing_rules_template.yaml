@@ -82,7 +82,7 @@ routing_rules:
       - "twitchcdn-shadow.net"
       - "twitchsvc-staging.tech"
       - "twitchsvc.net"
-    target_server: "nl"
+    target_server: "ru"
     visibility: "visible"
     priority: 172
     description: "Twitch видит трафик из России (обход блокировки РФ)"
