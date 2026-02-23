@@ -55,6 +55,15 @@ routing_rules:
     visibility: "hidden"
     priority: 20
     description: "Strava видит трафик из Нидерландов (обход блокировки РФ)"
+  
+  #Bestfiends
+  bestfiends:
+    domains:
+      - "playtika.com"
+    target_server: "nl"
+    visibility: "hidden"
+    priority: 49
+    discription: "hhdhd"
 
  # Telegram
   telegram:
