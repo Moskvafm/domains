@@ -4,7 +4,7 @@
   "counts": {
     "direct_domains": 64,
     "proxy_domains": 97,
-    "proxy_ips": 13,
+    "proxy_ips": 14,
     "block_domains": 7
   }
 }
