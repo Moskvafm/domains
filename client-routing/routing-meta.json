@@ -2,8 +2,8 @@
   "generator": "export_client_routing.py",
   "note": "Согласовано с manual_services + manual_ads; direct_ru вычитается из nl, как sync_manual_static_baseline.",
   "counts": {
-    "direct_domains": 65,
-    "proxy_domains": 97,
+    "direct_domains": 66,
+    "proxy_domains": 95,
     "proxy_ips": 14,
     "block_domains": 7
   }
