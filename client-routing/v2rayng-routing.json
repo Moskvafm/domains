@@ -77,9 +77,7 @@
           "domain:yandex.com",
           "domain:yandex.net",
           "domain:yandex.ru",
-          "domain:yoomoney.ru",
-          "domain:youtube.com",
-          "domain:youtubei.googleapis.com"
+          "domain:yoomoney.ru"
         ],
         "outboundTag": "direct"
       },
@@ -200,6 +198,8 @@
           "domain:x.com",
           "domain:xqobui-inapps.appsflyersdk.com",
           "domain:xqobui-launches.appsflyersdk.com",
+          "domain:youtube.com",
+          "domain:youtubei.googleapis.com",
           "domain:ytimg.com"
         ],
         "outboundTag": "proxy"
